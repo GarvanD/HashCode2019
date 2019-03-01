@@ -1,9 +1,11 @@
+import java.util.List;
+
 public class Image {
     private boolean isVertical;
-    private String[] Tags;
-    int numOfTags, index;
+     List<String> Tags;
+    final int numOfTags, index;
 
-    public Image(boolean V, String[] T, int Tn, int index) {
+    public Image(boolean V, List<String> T, int Tn, int index) {
         isVertical = V;
         Tags = T;
         numOfTags = Tn;
@@ -11,6 +13,7 @@ public class Image {
     }
 
     public int getNumOfTags(){return numOfTags;}
+    public boolean isVertical(){return isVertical;}
 
 
 }
